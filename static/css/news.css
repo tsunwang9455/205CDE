@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+li, a, p, button{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #1b1c1c;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #1b1c1c;
+}
+
+.logo{
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	margin-right: auto;
+}
+
+nav{
+	background-color: #1b1c1c;
+
+}
+
+button{
+	margin-left: 50px;
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius:  50px;
+	cursor: pointer; 
+	transition: all 0.3s ease 0s;
+}
+
+button: hover {
+	background-color: rgba(0,136,169,0.8);
+}
+
+ul.nav_links{
+	background-color: #1b1c1c;
+	
+
+}
+
+
+.nav_links{
+	list-style: none;
+
+}
+
+.nav_links li{
+	display: inline-block;
+	padding: 0px 20px;
+
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+
+
+.nav_links li a:hover{
+	color: #0088a9;
+}
+
+.navli{
+	margin-left: 50px;
+	padding: 9px 25px;
+	border: none;
+	border-radius:  50px;
+	cursor: pointer; 
+}
+
+.ltopic{
+	text-decoration: none;
+	color: #1b1c1c;
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom:  50px;
+	font-style: bold;
+}
+
+.interior.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blogBox .item {
+    background: #f4f4f4;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    height: 100%;
+}
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+.blogBox .item .blogTxt {
+    padding: 25px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.interior {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    z-index: 1;
+}
+.blogBox .item img {
+    width: 100%;
+    min-height: 188px;
+}
+.interior {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    z-index: 1;
+}
+.blogBox .item .blogCategory a {
+    padding: 5px 10px 2px;
+    border: 1px solid #616161;
+    color: #616161;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.blogBox .item p {
+    padding-bottom: 40px;
+}
+p {
+    margin: 0 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+p, pre {
+    margin: 0 0 1em 0;
+}
+a, a:link, a:focus, a:active, a:visited {
+    outline: 0;
+}
+a, a:link, a:focus, a:active, a:visited {
+    outline: 0;
+}
+.blogBox .item {
+    background: #f4f4f4;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    height: 100%;
+}
+.blogBox .item img {
+    width: 100%;
+}
+.blogBox .item .blogTxt {
+    padding: 25px;
+}
+.blogBox .item h2 {
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.interior.blog .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blogBox {
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.blogBox .item .blogCategory a:hover {
+    background: #616161;
+    color: #fff;
+    text-decoration: none;
+}
+.blogBox .item:hover {
+    background: #e8e8e8;
+    cursor: pointer;
+}
+#loadMore {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+#loadMore a {
+    background: #faa635;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+#loadMore a:hover {
+    background-color: #042a63;
+}
+
+@media screen and (min-width: 991px)
+.blogBox .featured .blogTxt {
+    max-width: 50%;
+    width: 100%;
+    padding: 50px;
+    float: left;
+    background: inherit;
+    min-height: 378px;
+}
+@media screen and (min-width: 991px)
+.blogBox .featured h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+@media screen and (min-width: 1200px)
+.blogBox .featured h2 {
+    font-size: 42px;
+}
+@media screen and (min-width: 991px)
+.blogBox .featured .blogTxt {
+    max-width: 50%;
+    width: 100%;
+    padding: 50px;
+    float: left;
+    background: inherit;
+    min-height: 378px;
+}
+@media screen and (min-width: 991px)
+.blogBox .featured img {
+    max-width: 50%;
+    width: 100%;
+    float: left;
+    min-height: 378px;
+}
+
+@media screen and (min-width: 991px)
+.blogBox .featured .blogTxt  {
+    max-width: 50%;
+    width: 100%;
+    padding: 50px;
+    float: left;
+    background: inherit;
+    min-height: 378px;
+}
+@media (min-width: 992px)
+.col-md-12 {
+    width: 100%;
+}
+@media (min-width: 992px)
+.col-md-12 {
+    width: 100%;
+}
+@media (min-width: 992px)
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+@media (min-width: 768px)
+.col-sm-6 {
+    width: 50%;
+}
+
+footer{
+    margin-top: 50px;
+    
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #35363b;
+    
+}

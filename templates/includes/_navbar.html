@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="static/css/nav.css">
+<nav>
+	<ul class="nav_links">
+		<img class="logo" src="static/image/GameFun.png">
+		<li class="navli"><a href="/">Home</a></li>
+		<li class="navli"><a href="/news">News</a></li>
+		<li class="navli"><a href="/product">Prdoucts</a></li>
+		<li class="navli"><a href="/CustomerService">Customer Support</a></li>
+		<li class="navli"><a href="/About">About us</a></li>
+		{% if session['loggedin'] == True %}
+		<li class="navli"><a href="/profile">Profile</a></li>
+		<li class="navli"><a href="/gamefun/logout" class="cta">Logout <span class="sr-only">(current)</span></a></li>
+		{% else %}
+		<li class="navli"><a href="/Login" class="cta">Login <span class="sr-only">(current)</span></a></li>
+		{% endif %}
+	</ul>
+
+</nav>

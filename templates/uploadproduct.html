@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload Product</title>
+</head>
+<body>
+{% include 'includes/_adminnav.html' %}
+{% block main %}
+    <div class="content">
+    <div class="jumbotron" style="background-color:#FFFFFF;">
+        
+        <h2 style="text-align: center; color: #206aaa;">Update Product info</h2>
+            <div>
+                <form method="POST" action="{{url_for('uploadproduct')}}" enctype="multipart/form-data">
+                    <div class="form-group">
+                       <label>Product Name</label><br>
+                       <input type="text" name="productName" id="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Detail</label><br>
+                        <input type="text" name="productDetail" id="productDetail" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Price</label><br>
+                        <input type="text" name="productPrice" id="productPrice" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Company</label><br>
+                        <input type="text" name="productCompany" id="productCompany" required>
+                    </div>
+                    <div class="form-group">
+                        <label >Product Photo</label><br>
+                        <input type="text" id="productPhoto" name="productPhoto"><br><br>
+                    </div>
+                    <p>
+                        <input type="submit" class="btn btn-primary" value="Upload Product">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>

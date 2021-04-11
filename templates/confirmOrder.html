@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="stylesheet"  href="static/css/MainPageStyle.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {% include 'includes/_navbar.html' %}
+    {% block body %}
+      {% include "includes/_flaskhelper.html" %}
+          <form action="confirmOrder" method="POST">
+                      <div class="form-group">
+                        <label >Your Name</label>
+                        <input type="text" class="form-control" id="orderName" , name="orderName" placeholder="Enter Your Name">
+                      </div>
+                      <div class="form-group">
+                        <label>ProductID</label>
+                        <input type="text" class="form-control" id="ProductID" name="ProductID" placeholder="Enter Product ID"  >
+                      </div>
+                      <div class="form-group">
+                        <label>Address</label>
+                        <input type="test" class="form-control" id="orderAddress" name="orderAddress" placeholder="Enter Address">
+                      </div>
+                      <div class="form-group">
+                        <label>Phone number</label>
+                        <input type="text" class="form-control" id="orderPhone" name="orderPhone" placeholder="Enter Phone Number">
+                      </div>
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="orderEmail" name="orderEmail" placeholder="Enter Email">
+                      </div>
+                      <button type="submit" class="btn btn-primary"> order it</button>
+          </form>
+            
+
+
+
+
+    
+    {% endblock %}
+
+</body>
+</html>
