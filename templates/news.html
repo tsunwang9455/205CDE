@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet"  href="static/css/news.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+	<title>News</title>
+</head>
+<body>
+	
+	<script>
+		$( document ).ready(function () {
+				$(".moreBox").slice(0, 3).show();
+				if ($(".blogBox:hidden").length != 0) {
+					$("#loadMore").show();
+				}		
+				$("#loadMore").on('click', function (e) {
+					e.preventDefault();
+					$(".moreBox:hidden").slice(0, 6).slideDown();
+					if ($(".moreBox:hidden").length == 0) {
+						$("#loadMore").fadeOut('slow');
+					}
+				});
+			});
+	</script>
+	{% include 'includes/_navbar.html' %}
+	{% block body %}
+	{% endblock %}
+
+	<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+	<div class="container my-4">
+    <!--Controls-->
+	    <div class="controls-top">
+	      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+	      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+	    </div>
+	    
+	<div class="ltopic">
+		<label>Lastest Game Topics</label>
+	</div>
+
+	    
+	    <div class="carousel-inner" role="listbox">
+
+	      
+	      <div class="carousel-item active">
+
+	        <div class="row">
+	          <div class="col-md-4">
+	            <div class="card mb-2">
+	              <img class="card-img-top" src="static/image/MHR.jpg"
+	                   alt="Card image cap">
+	              <div class="card-body">
+	                <p class="card-text">Monster Hunter Rise vacation requests prompt official holiday at Japanese tech company.
+	                  </p>
+	                 <a href="https://www.gamesradar.com/monster-hunter-rise-vacation-requests-prompt-official-holiday-at-japanese-tech-company/" class="btn btn-primary"> Watch</a>
+	              </div>
+	            </div>
+	          </div>
+
+	          <div class="col-md-4 clearfix d-none d-md-block">
+	            <div class="card mb-2">
+	              <img class="card-img-top" src="static/image/portal.jpg"
+	                   alt="Card image cap">
+	              <div class="card-body">
+	                
+	                <p class="card-text">GlaDOS was added to Portal because playtesters kept asking 'When does the game start?'</p>
+	                <a href="https://www.gamesradar.com/glados-was-added-to-portal-because-playtesters-kept-asking-when-does-the-game-start/" class="btn btn-primary"> Watch</a>
+	              </div>
+	            </div>
+	          </div>
+
+	          <div class="col-md-4 clearfix d-none d-md-block">
+	            <div class="card mb-2">
+	              <img class="card-img-top" src="static/image/WDL.jpg"
+	                   alt="Card image cap">
+	              <div class="card-body">
+	                
+	                <p class="card-text">Watch Dogs Legion free trial will let you sample single-player and multiplayer this week</p>
+	                <a href="https://www.gamesradar.com/watch-dogs-legion-free-trial-will-let-you-sample-single-player-and-multiplayer-this-week/" class="btn btn-primary"> Watch</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+
+	      </div>
+	      
+
+	      
+
+	    </div>
+	    
+	  </div>
+	</div>
+<div class="interior container clearfix">
+   <div class="row"> 
+      <div class="col-xs-12 col-sm-6 col-md-12 blogBox">
+         <div class="item featured">
+            <a href="https://www.gamesradar.com/sony-ps5-release-date-news-specs-features/"><img src="static/image/Ps5.jpg"></a>
+            <div class="blogTxt">
+               <div class="blogCategory">
+                  <a href="https://www.gamesradar.com/sony-ps5-release-date-news-specs-features/">PS5</a>
+               </div>
+               <h2>
+                  PS5: Release date, launch games, and everything you need to know about the Sony PlayStation 5
+               </h2>
+               <p class="post_intro hidden-xs">
+                  The PS5, aka Sony's newest console the PlayStation 5, officially launched in November last year, ushering in the next generation of console gaming....
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 blogBox moreBox" >
+         <div class="item">
+            <a href="https://www.gamesradar.com/half-life-alyx-marks-the-end-of-the-series-narrative-limbo/"><img src="static/image/HalfL.jpg"></a>
+            <div class="blogTxt">
+               <div class="blogCategory">
+                  <a href="https://www.gamesradar.com/half-life-alyx-marks-the-end-of-the-series-narrative-limbo/">Half-Life</a>
+               </div>
+               <h2>
+                  Half-Life: Alyx marks the end of the series’ “narrative limbo”
+               </h2>
+               <p class="post_intro hidden-xs">
+                  Half-Life fans have been stuck in "narrative limbo for a long time now", Valve has acknowledged....
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 blogBox moreBox" >
+         <div class="item">
+            <a href="https://www.gamesradar.com/apex-legends-dataminer-reveals-titans-could-finally-be-arriving/"><img src="static/image/Apex.jpg"></a>
+            <div class="blogTxt">
+               <div class="blogCategory">
+                  <a href="https://www.gamesradar.com/apex-legends-dataminer-reveals-titans-could-finally-be-arriving/">Apex Legend</a>
+               </div>
+               <h2>
+                  Apex Legends dataminer reveals Titans could finally be arriving
+               </h2>
+               <p class="post_intro hidden-xs">
+                  An Apex Legends dataminer has uncovered Titans coming to the battle royale arena, via the abilities of a new character...
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 blogBox moreBox" >
+         <div class="item">
+            <a href="https://www.gamesradar.com/rainbow-six-siege-adds-jill-valentine-skin-for-the-resident-evil-25th-anniversary-celebrations/"><img src="static/image/Rbs.jpg"></a>
+            <div class="blogTxt">
+               <div class="blogCategory">
+                  <a href="https://www.gamesradar.com/rainbow-six-siege-adds-jill-valentine-skin-for-the-resident-evil-25th-anniversary-celebrations/">Rainbow Six Siege</a>
+               </div>
+               <h2>
+                  Rainbow Six Siege adds Jill Valentine skin for the Resident Evil 25th anniversary celebrations
+               </h2>
+               <p class="post_intro hidden-xs">
+                 Jill Valentine has made her way to Rainbow Six Siege as part of a Resident Evil-themed ....
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 blogBox moreBox" style="display: none;">
+         <div class="item">
+            <a href="https://www.gamesradar.com/this-years-call-of-duty-is-reportedly-named-call-of-duty-wwii-vanguard/"><img src="static/image/COD.jpg"></a>
+            <div class="blogTxt">
+               <div class="blogCategory">
+                  <a href="/">Call of Duty</a>
+               </div>
+               <h2>
+                  The next Call of Duty is reportedly set in alt-history 1950s where WW2 never ended
+               </h2>
+               <p class="post_intro hidden-xs">
+                 Following its reveal of what it claimed is the working title of this year's release, leaker ModernWarzone has released a new report outlining the game's setting...
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 blogBox moreBox" style="display: none;">
+         <div class="item">
+            <a href="https://www.gamesradar.com/animal-crossing-new-horizons-gets-its-own-island-tour-creator-website/"><img src="static/image/AC.jpg"></a>
+            <div class="blogTxt">
+               <div class="blogCategory">
+                  <a href="https://www.gamesradar.com/animal-crossing-new-horizons-gets-its-own-island-tour-creator-website/">Animal Crossing</a>
+               </div>
+               <h2>
+                  Animal Crossing: New Horizons gets its own Island Tour Creator website
+               </h2>
+               <p class="post_intro hidden-xs">
+                 Animal Crossing: New Horizons players can now take their island tourism a step further with the official Nintendo Island Tour Creator tool, which was introduced .....
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 blogBox moreBox" style="display: none;">
+         <div class="item">
+            <a href="https://www.gamesradar.com/a-last-of-us-2-easter-egg-has-been-found-in-uncharted-4/"><img src="static/image/Lou.jpg"></a>
+            <div class="blogTxt">
+               <div class="blogCategory">
+                  <a href="https://www.gamesradar.com/a-last-of-us-2-easter-egg-has-been-found-in-uncharted-4/">The Last of Us</a>
+               </div>
+               <h2>
+                  A Last of Us 2 easter egg has been found in Uncharted 4
+               </h2>
+               <p class="post_intro hidden-xs">
+                A new discovery appears to link Uncharted 4: A Thief's End to The Last of Us 2 in an intriguing way.In a post on The Last of Us subreddit, user kheinrichs547 spotted that in Uncharted 4...
+               </p>
+            </div>
+         </div>
+      </div>
+      <div id="loadMore" style="">
+         <a href="#">Load More</a>
+      </div>
+   </div>
+</div>
+<footer class="page-footer front-small blue pt-4">
+			<div class=" container-fluid text-center text-md-left">
+				<div class="row">
+					<div class="col-md-6" mt-md-0 mt-3>
+						<h5 class="text-uppercase">Game Fun</h5>
+						<label>Shop Address</label>
+						<br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.9896262577004!2d114.15220009807382!3d22.28780736321229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007da0fc89ab%3A0xd318a2ff0cbca98a!2z5L-h5b635Lit5b-D5oub5ZWG5bGA5aSn5buI!5e0!3m2!1szh-TW!2sus!4v1616582887545!5m2!1szh-TW!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						
+					</div>
+					<hr class="clearfix w-100 d-md-none pb-3">
+
+					<div class="col-md-3 mb-md-0 mb-3">
+						<h5 class="text-uppercase">Links</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">About GameFun</a></li>
+							<li><a href="#">Company Info</a></li>
+							<li><a href="#">FaceBook</a></li>
+						</ul>
+						
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="footer-copyright text-center py-3">@ 2020 Copyright: <a href="#">GameFun.com</a></div>
+
+	</footer>
+
+
+</body>
+</html>

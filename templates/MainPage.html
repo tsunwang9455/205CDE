@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	
+	<link rel="stylesheet"  href="static/css/MainPageStyle.css">
+	
+
+	<title>GameFun</title>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	
+	{% include 'includes/_navbar.html' %}
+	{% block body %}
+	{% endblock %}
+
+		
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  			
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      				<img src="static/image/BF1.jpg"  alt="..." width="1920" height="900">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="static/image/NBA.jpg"  alt="..." width="1920" height="900" >
+    			</div>
+    			<div class="carousel-item">
+      				<img src="static/image/FH4.jpg"  alt="..." width="1920" height="900">
+    			</div>
+  			</div>
+  			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    			<span class="carousel-control-prev-icon" ></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+   				<span class="carousel-control-next-icon" ></span>
+    			<span class="sr-only">Next</span>
+  			</a>
+		</div>
+
+
+
+		<div class="Topic">
+			<label id="LT">Lastest Topic</label>
+		</div>
+		<div class="card-group" >
+		  <div class="card">
+		    <img class="card-img-top" src="static/image/MHR.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title"></h5>
+		      <p class="card-text">Monster Hunter Rise vacation requests prompt official holiday at Japanese tech company.</p>
+		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		      <a href="https://www.gamesradar.com/monster-hunter-rise-vacation-requests-prompt-official-holiday-at-japanese-tech-company/" class="btn btn-primary"> Watch</a>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="static/image/portal.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title"></h5>
+		      <p class="card-text">GlaDOS was added to Portal because playtesters kept asking 'When does the game start?'</p>
+		      <p class="card-text"><small class="text-muted">Last updated 7 mins ago</small></p>
+		      <a href="https://www.gamesradar.com/glados-was-added-to-portal-because-playtesters-kept-asking-when-does-the-game-start/" class="btn btn-primary"> Watch</a>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="static/image/WDL.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title"></h5>
+		      <p class="card-text">Watch Dogs Legion free trial will let you sample single-player and multiplayer this week</p>
+		      <p class="card-text"><small class="text-muted">Last updated 15 mins ago</small></p>
+		      <a href="https://www.gamesradar.com/watch-dogs-legion-free-trial-will-let-you-sample-single-player-and-multiplayer-this-week/" class="btn btn-primary"> Watch</a>
+		    </div>
+		  </div>
+		</div>
+
+
+
+		<div class="Lgame">
+			<label>Latest Game</label>
+		</div>
+		<div class="card-group" >
+		  <div class="card">
+		    <img class="card-img-top" src="static/image/KaWM.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title">Kaze and the Wild Masks</h5>
+		      <p class="card-text"></p>
+		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		      <a href="#" class="btn btn-primary"> See Product</a>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="static/image/MHRG.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title">Monster Hunter Rise</h5>
+		      <p class="card-text"></p>
+		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		      <a href="#" class="btn btn-primary"> See Product</a>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="static/image/SoS.jpg" alt="Card image cap" >
+		    <div class="card-body">
+		      <h5 class="card-title">Story of Season</h5>
+		      <p class="card-text"></p>
+		      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		      <a href="#" class="btn btn-primary"> See Product</a>
+		    </div>
+		  </div>
+		</div>
+
+
+
+		<footer class="page-footer front-small blue pt-4">
+			<div class=" container-fluid text-center text-md-left">
+				<div class="row">
+					<div class="col-md-6" mt-md-0 mt-3>
+						<h5 class="text-uppercase">Game Fun</h5>
+						<label>Shop Address</label>
+						<br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.9896262577004!2d114.15220009807382!3d22.28780736321229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007da0fc89ab%3A0xd318a2ff0cbca98a!2z5L-h5b635Lit5b-D5oub5ZWG5bGA5aSn5buI!5e0!3m2!1szh-TW!2sus!4v1616582887545!5m2!1szh-TW!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						
+					</div>
+					<hr class="clearfix w-100 d-md-none pb-3">
+
+					<div class="col-md-3 mb-md-0 mb-3">
+						<h5 class="text-uppercase">Links</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">About GameFun</a></li>
+							<li><a href="#">Company Info</a></li>
+							<li><a href="#">FaceBook</a></li>
+						</ul>
+						
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="footer-copyright text-center py-3">@ 2020 Copyright: <a href="#">GameFun.com</a></div>
+
+	</footer>
+
+</body>
+</html>

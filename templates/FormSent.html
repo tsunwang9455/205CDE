@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Suceess</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style >
+*{
+	background-color: #24252A;
+}
+
+	.message{
+		font-family: 'Montserrat', sans-serif;
+		position: relative;
+		top: 400px;
+		left: 45%;
+		font-size: 30px;
+		font-weight: 500;
+		align-items: center;
+		color: #edf0f1;
+	}
+.HPbtn{
+	position: relative;
+	top: 450px;
+	left:48%;
+}
+
+.btn{
+	margin-top: 20px;
+	width: 200px;
+	height: 50px;
+	border-radius: 40px;
+	outline: none;
+	font-weight: 500;
+	font-size: 1rem;
+	border: none;
+	background:#445a94;
+	color:#fff;
+	box-shadow: 8px 10px 30px rgba(0,0,0,0.329);
+	transition: 0.4s;
+}
+
+.btn:hover{
+	background:  #4b2888;
+	color: #fff;
+}
+
+
+	
+</style>
+<body>
+	
+	
+	<div class="message">
+		<a> Form has Sent !</a>
+	</div>
+	<div class="HPbtn">
+		<a href="{{ url_for('index') }}"><button class="btn">Back to Home Page</button></a>
+	</div>
+		
+	
+	
+
+	
+</body>
+</html>
